@@ -10,6 +10,7 @@ function App() {
   const [pokemonData, setPokemonData] = useState({})
   const [teamPokemon, setTeamPokemon] = useState([])
 
+  //https://pokeapi.co/api/v2/pokemon?limit=151
 
   useEffect( () => {
     const pokemonUrl = `https://pokeapi.co/api/v2/pokemon?limit=151`;
@@ -27,17 +28,19 @@ function App() {
 }
 console.log(teamPokemon)
 
+  //console.log(pokemonData)
+
   return (
     <div className="App">
       <nav className='header-flex'>
       <Link to="/" id="home" className='header-item'>
-        <h1>POKEMON</h1>
+        <h1>Pokepedia</h1>
       </Link>
       <Link to="/pokedex" id="pokedex" className='header-item'>
         <h1>Pokedex</h1>
       </Link>
       <Link to='/my-team' id="my-team" className='header-item'>
-        <h2>My Team</h2>
+        <h2>PokeTeam</h2>
       </Link>
       </nav>
       <Switch>

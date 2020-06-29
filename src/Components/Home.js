@@ -1,9 +1,11 @@
 import React  from "react";
 
+//sets state to clicked pokemon and displays full description
+
 function Home() {
     
     return (
-      <div className='home'>
+      <div>
         <h1>Home</h1>
       </div>
     );
